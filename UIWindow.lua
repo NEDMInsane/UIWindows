@@ -34,9 +34,9 @@ end
 
 function UIWindow:addElement(element, x, y)
 	element:setScreenPosition(x + self.windowX, y + self.windowY + self.titleBarHeight)
-	print(#self.elements)
+	--print(#self.elements)
 	self.elements[#self.elements + 1] = element
-	print(#self.elements)
+	--print(#self.elements)
 end
 
 function UIWindow:getText() return self.text end

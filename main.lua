@@ -1,5 +1,6 @@
 UIWindow = require 'UIWindow'
 UIElement = require 'UIElement'
+UIButton = require 'UIButton'
 
 local testWindow1 = UIWindow:new()
 local testWindow2 = UIWindow:new()
@@ -15,9 +16,9 @@ function love.load()
 	newLabel:init("Test Label", 0, 0)
 	windows[1]:addElement(newLabel, 5, 5)
 
-	local newLabel2 = UIElement:new()
-	newLabel2:init("Test2 Label", 0, 0)
-	windows[1]:addElement(newLabel2, 5, 15)
+	local newButton = UIButton:new()
+	newButton:init("Test2 Button", 0, 0)
+	windows[1]:addElement(newButton, 5, 15)
 end
 
 function love.draw()
